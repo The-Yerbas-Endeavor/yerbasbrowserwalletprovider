@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "yerbas-js": "The-Yerbas-Endeavor/yerbas-js",
+    "express": "^4.17.2",
+    "express-rate-limit": "5.3.0",
+    "http-proxy": "^1.18.1",
+    "sqlite3": "^5.0.2",
+    "web3": "^1.6.1"
+  },
+  "scripts": {
+    "start": "node ./app.js"
+  }
+}
