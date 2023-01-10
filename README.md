@@ -30,22 +30,19 @@ Source code to host a node to serve browser extension wallet requests.
 5. (Read step 2 first) Setup the latest Yerbas binaries and extract to `/root/yerbas`:
 
    ```
-   mkdir /root/yerbas
-   cd /root/yerbas
    wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-ubuntu20-2.1.1.4.tar.gz
    tar -xf yerbas-ubuntu20-2.1.1.4.tar.gz
-   chmod +x ./*
-   mkdir /root/.yerbascore
-   echo 'txindex=1' > /root/.yerbascore/yerbas.conf
+   mkdir .yerbascore
+   echo 'txindex=1' > /.yerbascore/yerbas.conf
    ```
 
 6. (Read step 2 first) Clone and setup this repo in `/root/yerbasbewp`:
 
    ```
    git clone https://github.com/The-Yerbas-Endeavor/yerbasbrowserwalletprovider.git /root/yerbasbewp
-   cd /root/bewp
+   cd yerbasbewp
    yarn install
-   cd /root/bewp/database
+   cd database
    sqlite3 database.db
    .read dump.479673.sql
    (Exit sqlite3 prompt using CTRL+D)
@@ -54,14 +51,14 @@ Source code to host a node to serve browser extension wallet requests.
 7. (Read step 2 first) Run Yerbas daemon and wait for it to sync
 
    ```
-   cd /root/yerbas-build
+   cd yerbas-build
    ./yerbasd
-   ./yerbas-cli getblockchaininfo        # Use this to check synced height.
+   ./yerbas-cli getblockcount        # Use this to check synced height.
    ```
 
  8. (Read step 2 first) Run provider daemon
 
     ```
-    cd /root/dingobewp
+    cd yerbasbewp
     sudo yarn start
     ```
