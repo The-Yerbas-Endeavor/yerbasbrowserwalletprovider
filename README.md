@@ -39,8 +39,8 @@ Source code to host a node to serve browser extension wallet requests.
 6. (Read step 2 first) Clone and setup this repo in `/root/yerbasbewp`:
 
    ```
-   git clone https://github.com/The-Yerbas-Endeavor/yerbasbrowserwalletprovider.git /root/yerbasbewp
-   cd yerbasbewp
+   git clone https://github.com/The-Yerbas-Endeavor/yerbasbwp.git /root/yerbasbewp
+   cd yerbasbwp
    yarn install
    cd database
    sqlite3 database.db
@@ -59,6 +59,6 @@ Source code to host a node to serve browser extension wallet requests.
  8. (Read step 2 first) Run provider daemon
 
     ```
-    cd yerbasbewp
+    cd yerbasbwp
     sudo yarn start
     ```
