@@ -951,7 +951,7 @@ diffie-hellman@^5.0.0:
 
 yerbas-js@The-Yerbas-Endeavor/yerbas-js:
   version "0.0.1"
-  resolved "https://codeload.github.com/The-Yerbas-Endeavor/yerbas-js/tar.gz/6bdfccdf89aae06beb442b31069b8863750fbc10"
+  resolved "https://codeload.github.com/The-Yerbas-Endeavor/yerbas-js/tar.gz/1fb0c3b325c9259ab03294b2bc2edcebbd4d9963"
   dependencies:
     assert "^2.0.0"
     mocha "^9.2.2"
